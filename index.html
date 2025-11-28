@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Модальное окно с API</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Демонстрация мода с API</h1>
+    </header>
+
+    <main>
+        <!-- КНОПКА ДОБАВЛЕНА ЗДЕСЬ -->
+        <button id="openModal" class="btn-primary">Загрузить данные пользователя</button>
+        
+        <div class="features">
+            <h2>Возможности проекта:</h2>
+            <ul>
+                <li>✅ Работа с внешним API</li>
+                <li>✅ Анимированное модальное окно</li>
+                <li>✅ Адаптивный дизайн</li>
+                <li>✅ Обработка ошибок</li>
+            </ul>
+        </div>
+    </main>
+
+    <!-- Модальное окно -->
+    <div id="userModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>📊 Данные пользователя</h2>
+            <div id="userData" class="user-data">
+                <p>Загрузка...</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
