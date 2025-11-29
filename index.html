@@ -3,47 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Леста Игры - Личный кабинет</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Леста Игры - Авторизация</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Леста Игры</h1>
-        <p>Доступ к данным личного кабинета</p>
-    </header>
+    <div class="container">
+        <header>
+            <h1>Леста Игры</h1>
+            <p>Авторизация в личном кабинете</p>
+        </header>
 
-    <main>
-        <button id="openModal" class="btn-primary">
-            🔐 Получить данные из ЛК
-        </button>
-        
-        <div class="features">
-            <h2>Доступные данные:</h2>
-            <ul>
-                <li>✅ Баланс и валюта</li>
-                <li>✅ Статистика игр</li>
-                <li>✅ Достижения</li>
-                <li>✅ История транзакций</li>
-                <li>✅ Настройки аккаунта</li>
-            </ul>
-        </div>
-    </main>
-
-    <!-- Модальное окно данных ЛК -->
-    <div id="userModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>📊 Данные личного кабинета</h2>
-            <div id="userData" class="user-data">
-                <p>Загрузка данных...</p>
+        <main class="auth-container">
+            <div class="auth-form">
+                <h2>🔐 Вход в аккаунт</h2>
+                
+                <div class="input-group">
+                    <label for="username">Игровой никнейм:</label>
+                    <input type="text" id="username" placeholder="Введите ваш никнейм" class="auth-input">
+                </div>
+                
+                <div class="input-group">
+                    <label for="password">Пароль:</label>
+                    <input type="password" id="password" placeholder="Введите пароль" class="auth-input">
+                </div>
+                
+                <button id="loginBtn" class="btn-primary">Войти в личный кабинет</button>
+                
+                <div class="auth-links">
+                    <a href="#">Забыли пароль?</a>
+                    <a href="#">Создать аккаунт</a>
+                </div>
             </div>
-        </div>
+            
+            <div class="features">
+                <h3>После авторизации вы получите доступ к:</h3>
+                <ul>
+                    <li>✅ Статистике игр</li>
+                    <li>✅ Балансу и валюте</li>
+                    <li>✅ Достижениям</li>
+                    <li>✅ История транзакций</li>
+                    <li>✅ Настройкам аккаунта</li>
+                </ul>
+            </div>
+        </main>
+
+        <footer>
+            <p>Леста Игры © 2024</p>
+        </footer>
     </div>
 
-    <footer>
-        <p>Леста Игры © 2024 - Официальный API</p>
-    </footer>
-
-    <script src="scrypt.js"></script>
+    <script src="auth.js"></script>
 </body>
 </html>
