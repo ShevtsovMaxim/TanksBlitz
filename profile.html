@@ -1,1 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Леста Игры - Личный кабинет</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="profile-header">
+            <h1>Леста Игры</h1>
+            <div class="user-welcome">
+                <span id="userGreeting">Добро пожаловать!</span>
+                <button id="logoutBtn" class="btn-secondary">Выйти</button>
+            </div>
+        </header>
 
+        <main class="profile-container">
+            <div class="profile-card">
+                <h2>👤 Профиль игрока</h2>
+                <div id="profileData" class="data-section">
+                    <div class="loading">Загрузка данных профиля...</div>
+                </div>
+            </div>
+
+            <div class="balance-card">
+                <h2>💰 Баланс</h2>
+                <div id="balanceData" class="data-section">
+                    <div class="loading">Загрузка данных баланса...</div>
+                </div>
+            </div>
+
+            <div class="stats-card">
+                <h2>📈 Статистика</h2>
+                <div id="statsData" class="data-section">
+                    <div class="loading">Загрузка статистики...</div>
+                </div>
+            </div>
+
+            <div class="achievements-card">
+                <h2>🏆 Достижения</h2>
+                <div id="achievementsData" class="data-section">
+                    <div class="loading">Загрузка достижений...</div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Леста Игры © 2024 - Личный кабинет</p>
+        </footer>
+    </div>
+
+    <script src="profile.js"></script>
+</body>
+</html>
