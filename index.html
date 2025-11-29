@@ -3,29 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мод на отметки</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Леста Игры - Личный кабинет</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Мод на отметки</h1>
+        <h1>Леста Игры</h1>
+        <p>Доступ к данным личного кабинета</p>
     </header>
 
     <main>
-        <!-- КНОПКА ДОБАВЛЕНА ЗДЕСЬ -->
-        <button id="openModal" class="btn-primary">Авторизоваться в Tanks Blitz</button>
+        <button id="openModal" class="btn-primary">
+            🔐 Получить данные из ЛК
+        </button>
         
         <div class="features">
-            <h2>Возможности мода</h2>
+            <h2>Доступные данные:</h2>
             <ul>
-                <li>✅ Актуальный процент отметки</li>
-                <li>✅ Текущий суммарный урон</li>
-                <li>✅ Необходимый урон для отметки</li>
+                <li>✅ Баланс и валюта</li>
+                <li>✅ Статистика игр</li>
+                <li>✅ Достижения</li>
+                <li>✅ История транзакций</li>
+                <li>✅ Настройки аккаунта</li>
             </ul>
         </div>
     </main>
 
-    <!-- Модальное окно -->
+    <!-- Модальное окно данных ЛК -->
     <div id="userModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
@@ -40,7 +44,6 @@
         <p>Леста Игры © 2024 - Официальный API</p>
     </footer>
 
-
-    <script src="scrypt.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
